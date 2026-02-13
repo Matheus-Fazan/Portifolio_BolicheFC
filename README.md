@@ -4,6 +4,7 @@
 <ol>
   <li>Entre no site</li>
   <li>Clique no nome da pessoa que deseja ver o sobre mim</li>
+  <li>Clique no nome da pessoa ou em voltar para retornar a página inicial</li>
   <li>Aproveite</li>
 </ol>
 
