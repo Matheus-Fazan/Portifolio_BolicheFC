@@ -1,0 +1,167 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0B0B0B;
+    color: #F1F1F1;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.text-red {
+    color: #e21a2b;
+}
+
+/* Header / Hero */
+.hero {
+    padding: 100px 0;
+    border-bottom: 1px solid #222;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.name {
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    flex: 1;
+}
+
+.bio {
+    flex: 1;
+    font-size: 1.2rem;
+    color: #A0A0A0;
+    border-left: 4px solid #E63946;
+    padding-left: 25px;
+}
+
+/* Skills Section */
+.skills-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: #161616;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #222;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.skill-card:hover {
+    border-color: #E63946;
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    color: #E63946;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.skill-card ul {
+    list-style: none;
+}
+
+.skill-card li {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #D1D1D1;
+}
+
+/* Certifications */
+.certifications {
+    padding-bottom: 100px;
+}
+
+.cert-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.cert-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #161616;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.cert-badge {
+    width: 12px;
+    height: 12px;
+    background: #E63946;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #E63946;
+}
+
+.cert-item h4 {
+    font-size: 1.1rem;
+}
+
+.cert-item p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: #444;
+    border-top: 1px solid #222;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .bio {
+        border-left: none;
+        border-top: 4px solid #E63946;
+        padding: 20px 0 0 0;
+    }
+
+    .name {
+        font-size: 2.5rem;
+    }
+
+    .cert-list {
+        grid-template-columns: 1fr;
+    }
+}
